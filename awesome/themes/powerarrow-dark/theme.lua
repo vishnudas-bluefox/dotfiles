@@ -18,17 +18,18 @@ local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
 theme.wallpaper                                 = "/home/unknown/Desktop/delete/bluefox.jpg"
 theme.font                                      = "Terminus 9"
-theme.fg_normal                                 = "#0A043C"
-theme.fg_focus                                  = "#FFE3D8"
+theme.fg_normal                                 = "#ffffff"
+theme.wibar_bg_normal                           = "#021116"
+theme.fg_focus                                  = "#ffffff"
 theme.fg_urgent                                 = "red"
-theme.bg_normal                                 = "pink"
-theme.bg_focus                                  = "#03506F"
+theme.bg_normal                                 = "#021116"
+theme.bg_focus                                  = "#021116"
 theme.bg_urgent                                 = "pink"
 theme.border_width                              = dpi(1)
-theme.border_normal                             = "#0A043C"
-theme.border_focus                              = "#03506F"
-theme.border_marked                             = "#CC9393"
-theme.tasklist_bg_focus                         = "#21325E"
+theme.border_normal                             = "#021116"
+theme.border_focus                              = "#0A2D2C"
+theme.border_marked                             = "#021116"
+theme.tasklist_bg_focus                         = "#0A2D2C"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -114,13 +115,13 @@ theme.cal = lain.widget.cal({
 
 -- Mail IMAP check
 local mailicon = wibox.widget.imagebox(theme.widget_mail)
---[[ commented because it needs to be set before use
+--[[commented because it needs to be set before use
 mailicon:buttons(my_table.join(awful.button({ }, 1, function () awful.spawn(mail) end)))
 theme.mail = lain.widget.imap({
     timeout  = 180,
-    server   = "server",
-    mail     = "mail",
-    password = "keyring get mail",
+    server   = "smtp.gmail.com",
+    mail     = "vishnudas956783@gmail.com",
+    password = "password",
     settings = function()
         if mailcount > 0 then
             widget:set_markup(markup.font(theme.font, " " .. mailcount .. " "))
@@ -243,6 +244,7 @@ theme.volume = lain.widget.alsa({
         widget:set_markup(markup.font(theme.font, " " .. volume_now.level .. "% "))
     end
 })
+
 theme.volume.widget:buttons(awful.util.table.join(
                                awful.button({}, 4, function ()
                                      awful.util.spawn("amixer set Master 1%+")
@@ -303,7 +305,7 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(18), bg = theme.fg_normal, fg = theme.fg_focus, })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(18), bg = theme.wibar_bg_normal, fg = theme.fg_focus, })
     -- s.mywibox = awful.wibar({ position = "left", screen = s, width = 200, height = 760, type = "desktop", visible = true })
 
 
@@ -321,8 +323,8 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
-            keyboardlayout,
+           -- wibox.widget.systray(),
+            --keyboardlayout,
             spr,
             arrl_ld,
             wibox.container.background(mpdicon, theme.bg_focus),

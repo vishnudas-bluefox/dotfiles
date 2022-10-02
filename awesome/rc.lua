@@ -400,6 +400,9 @@ globalkeys = mytable.join(
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Shift"   }, "f", function () awful.spawn("nautilus") end,
               {description = "open filemanager", group = "file"}),
+
+    awful.key({ modkey,}, "e", function () awful.spawn("emacs") end,
+              {description = "open emacs", group = "file"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
