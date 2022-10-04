@@ -94,7 +94,7 @@ local terminal     = "x-terminal-emulator"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "editor"
-local browser      = "midori"
+local browser      = "qutebrowser"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "main", "http", "dev", "dev2", "misc","garbage", "7","8" }
@@ -166,6 +166,14 @@ beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv
 -- }}}
 
 -- {{{ Menu
+
+
+
+--for music player test run
+
+
+
+
 
 -- Create a launcher widget and a main menu
 local myawesomemenu = {
@@ -806,6 +814,7 @@ client.connect_signal("request::titlebars", function(c)
             layout  = wibox.layout.flex.horizontal
         },
         { -- Right
+
             awful.titlebar.widget.floatingbutton (c),
             awful.titlebar.widget.maximizedbutton(c),
             awful.titlebar.widget.stickybutton   (c),
