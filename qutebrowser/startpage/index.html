@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="background">
+
+    <div class="backgrounds">
+      <div class="contents">
+        <center><p><span id="time"></span> | <span id="date"></span></p></center>
+        <center><form id="form" role="search">
+          <input
+            type="search"
+            id="query"
+            name="q"
+            placeholder="ask fox!"
+          />
+        </form></center>
+        <center><ul>
+          <li><a href="https://github.com/vishnudas-bluefox">Github</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/">My mail</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+          <li><a href="https://leetcode.com/problemset/all/">LinkedIn</a></li>
+          <li><a href="https://search.nixos.org">Leetcode</a></li>
+        </ul></center>
+    </div>
+      <script>
+      const f = document.getElementById("form");
+      const q = document.getElementById("query");
+      const search = "https://duckduckgo.com/?t=ffab&q=";
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = search + q.value + "&ia=web";
+        window.open(url, "_self");
+      }
+
+      f.addEventListener("submit", submitted);
+      var date = new Date();
+      document.getElementById("time").innerHTML = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: true});
+      document.getElementById("date").innerHTML = date.toLocaleString([], {day: '2-digit', month: '2-digit'});
+    </script>
+  </body>
+</html>
