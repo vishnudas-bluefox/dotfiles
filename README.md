@@ -8,7 +8,7 @@ Personal dotfiles
 #### Window manager : AwesomeWM
 #### Bar : Wibox
 #### Menu : Dmenu
-#### Terminal : Kitty/Gnome-Terminal [fish/bash]
+#### Terminal : Kitty/Gnome-Terminal [fish/bash]  
 #### Browser : Qutebrowser
 #### SplashScreen : Plymouth [Coustom config file]
 
@@ -24,9 +24,11 @@ _____________________
 ### HomeSCreen 
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Homescreen.png" >
  
-### Terminal [Bash/Kitty ]
+### Terminal [Bash/Kitty ] 
+<img src="https://img.icons8.com/office/40/7950F2/console.png"/>
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Bash%20terminal.png">
 
 ### Browser 
+
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Browser.png">
  
