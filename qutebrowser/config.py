@@ -13,6 +13,9 @@
 # Change the argument to True to still load settings configured via autoconfig.yml
 config.load_autoconfig(False)
 
+#making all web pages as dark mode
+config.set("colors.webpage.darkmode.enabled",True)
+
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
@@ -146,4 +149,10 @@ c.url.default_page = 'file:///home/unknown/.config/qutebrowser/startpage/index.h
 c.url.start_pages = 'file:///home/unknown/.config/qutebrowser/startpage/index.html'
 
 
-
+#Bindings for normal mode
+config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('Z', 'hint links spawn st -e youtube-dl {hint-url}')
+config.bind('t', 'set-cmd-text -s :open -t')
+config.bind('xb', 'config-cycle statusbar.show always never')
+config.bind('xt', 'config-cycle tabs.show always never')
+config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
