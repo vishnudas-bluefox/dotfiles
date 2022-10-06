@@ -12,6 +12,8 @@ Personal dotfiles
 #### Browser : Qutebrowser
 #### SplashScreen : Plymouth [Coustom config file]
 #### Editor : Doom-eMacs
+#### Music player : emms
+#### Email : mu4e
 
 ## Installation 
 _____________________
