@@ -68,6 +68,9 @@ Commands | undak | kala | chambikko | foxenv | foxreq | title |
 Orginal commands | mkdir+cd or create file | delete directory or files | For update and upgrade | Create python virtualenv | install dependencies | Set coustom title for terminal |
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Bash%20terminal.png">
  
+ 
+ #### [(Click Here)](https://youtu.be/ew_ggQDBpjc) to see the workflow video
+
  For changing the design :<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/terminal/bash/.bashrc#:~:text=if%20%5B%20%22,unset%20color_prompt%20force_color_prompt">check</a>
  
  
@@ -82,6 +85,8 @@ Browser : Qute Browser
  I try to create a minimal and clean <a href="https://github.com/vishnudas-bluefox/dotfiles/tree/master/qutebrowser/startpage" >start page </a> for the browser. I tried my best to maintain the connection between the color themes and brand logo. The default vim keybindings was the most efficient part for the qute-browser.I love vim keybindings coustom key bindings isn't needed for this browser but i added few key bindings for increasing the quteness <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/qutebrowser/config.py#:~:text=config.bind(%27M%27%2C%20%27hint,never%3B%3B%20config%2Dcycle%20tabs.show%20always%20never%27)">[ Key-bindings]</a>.
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/clean_browser.png">
  
+ #### [(Click Here)](https://youtu.be/eIjtknr91-w) to see the workflow video
+  
  ### Splash Screen 
  ______________
  Insted of using DM i plan to change the the spalsh screen and lock screen from the root files :upside_down_face:, Created coustom logo and animations for the splash screen. By the help of plymouth the task easily accomplished hit a try :hugs: 
@@ -93,9 +98,11 @@ Browser : Qute Browser
 <a href="https://github.com/vishnudas-bluefox/dotfiles/tree/master/boot_animation">Click here</a> to see the files
  
 ### Editor : Doom-eMacs
+__________________________
 Currently using a boalted emacs [Spoiler : noob dev] , Here also i try my best to maintain the color theme and connection with wallpaper. Vim key binding was also available here [Evil-mode :smiling_imp: ]. The productivity was on another level with the doom emacs
 <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/doom_emacs.png%20">
 <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/doom_emacconfig.png">
+ #### [(Click Here)](https://youtu.be/syNwmf_8c4k) to see the workflow video
 ##### Some cool patches
 * Email Client [m4ue]
 * Music player [emms]
