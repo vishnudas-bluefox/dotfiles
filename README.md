@@ -85,10 +85,11 @@ Browser : Qute Browser
  ### Splash Screen 
  ______________
  Insted of using DM i plan to change the the spalsh screen and lock screen from the root files :upside_down_face:, Created coustom logo and animations for the splash screen. By the help of plymouth the task easily accomplished hit a try :hugs: 
- # Space for the image/gif
  
+ <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/ezgif.com-gif-maker.gif">
  
- 
+
+
 <a href="https://github.com/vishnudas-bluefox/dotfiles/tree/master/boot_animation">Click here</a> to see the files
  
 ### Editor : Doom-eMacs
