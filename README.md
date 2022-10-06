@@ -109,5 +109,5 @@ Currently using a boalted emacs [Spoiler : noob dev] , Here also i try my best t
 
 ##### Some cool patches
 * Email Client [m4ue]
-* Music player [emms]
+* Music player [emms] workflow video: <a href="https://youtu.be/yKGnk7SNmKg">Click Here</a>
 * neotree etc...
