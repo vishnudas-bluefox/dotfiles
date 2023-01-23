@@ -13,6 +13,8 @@ local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
+local default_bright = 1
+local current_bright = os.execute("xrandr --verbose | grep -m 1 -i brightness | cut -f2 -d ' '")
 
 
 -- }}}
@@ -451,10 +453,27 @@ globalkeys = mytable.join(
     -- awful.key({ }, "XF86MonBrightnessUp", function ()
     --     awful.util.spawn("xbacklight -inc 15") end)
     awful.key({ altkey }, "XF86MonBrightnessUp", function ()
-        awful.util.spawn("xrandr --output eDP-1 --brightness 1") end,
-              {description = "+10%", group = "hotkeys"}),
+        default_bright = default_bright +.1
+    naughty.notify({
+        preset = naughty.config.presets.critical,
+        title = default_bright,
+        timeout = 1,
+        bg = '#00000000',
+                   })
+
+        awful.util.spawn("xrandr --output eDP-1 --brightness "..default_bright) end,
+      {description = "+10%", group = "hotkeys"}),
     awful.key({ altkey }, "XF86MonBrightnessDown", function ()
-        awful.util.spawn("xrandr --output eDP-1 --brightness .5") end,
+
+            naughty.notify({
+        preset = naughty.config.presets.critical,
+        title = default_bright,
+        timeout = 1,
+        bg = '#00000000',
+                   })
+
+        default_bright = default_bright -.1
+        awful.util.spawn("xrandr --output eDP-1 --brightness "..default_bright) end,
               {description = "-10%", group = "hotkeys"}),
 
     -- ALSA volume control
