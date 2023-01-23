@@ -12,6 +12,8 @@ Personal dotfiles
 #### Browser : Qutebrowser
 #### SplashScreen : Plymouth [Coustom config file]
 #### Editor : Doom-eMacs
+#### Music player : emms
+#### Email : mu4e
 
 ## Installation 
 _____________________
@@ -29,20 +31,23 @@ _______________
 
 
 
-##### Don't copy paste [ not judging, copy paste idea maybe won't works for you ]
+
 Create yours own config files :yum:
 <div>
-- Clock :clock1230: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%3Anew()-,%2D%2D%20Textclock,),-%2D%2D%20Calendar">theme.lua</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- Calendar:date: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Calendar,%7D)">theme.lua</a> <br>
-- EMail :email: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Mail%20IMAP,%2D%2D%5D%5D">theme.lua</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- Music Player :musical_note:	 : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20MPD,%7D)">theme.lua</a><br>
-- Ram :floppy_disk: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20MEM,%7D)">theme.lua</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- Cpu :computer: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20CPU,%7D)">theme.lua</a><br>
-- Temp :face_with_thermometer: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=local%20tempicon%20%3D,%7D)">theme.lua</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- Battery :hot_face: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Battery,%7D)">theme.lua</a><br>
-- Volume :ear_with_hearing_aid: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%7D)-,%2D%2D%20ALSA%20volume,)),-%2D%2D%20Net">theme.lua</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- Internet 	:monocle_face: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Net,%7D)">theme.lua</a> <br>
-- layouts :film_strip: : <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/rc.lua#:~:text=awful.layout.layouts,%7D">rc.lua</a>
+
+Functions | Description|
+---|---|
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%3Anew()-,%2D%2D%20Textclock,),-%2D%2D%20Calendar">Clock :clock1230:</a> | Creates a clock widget |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Calendar,%7D)">Calendar:date:</a> | Creates the calender widget |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Mail%20IMAP,%2D%2D%5D%5D">EMail :email:</a> | Creates Email widget |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20MPD,%7D)">Music Player :musical_note:</a> | Creates a music player widget |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20MEM,%7D)">Ram :floppy_disk:</a> | Update ram usage|
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20CPU,%7D)">Cpu :computer:</a> |update cpu usage |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=local%20tempicon%20%3D,%7D)">Temp :face_with_thermometer:</a> | Update cpu temperature |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Battery,%7D)">Battery :hot_face:</a> | Battery status or return battery charge |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%7D)-,%2D%2D%20ALSA%20volume,)),-%2D%2D%20Net">Volume :ear_with_hearing_aid:</a> | return current volume and adjust the volume using keybindings |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=%2D%2D%20Net,%7D)">Internet 	:monocle_face:</a> | Currently uploading and downloading speed |
+<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/rc.lua#:~:text=awful.layout.layouts,%7D">layouts :film_strip:</a> | Show which layout we are currently using |
 </div>
 
 all windows and its title bars are also coustomised as colorthemed :smiling_imp:
@@ -68,8 +73,9 @@ Commands | undak | kala | chambikko | foxenv | foxreq | title |
 Orginal commands | mkdir+cd or create file | delete directory or files | For update and upgrade | Create python virtualenv | install dependencies | Set coustom title for terminal |
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Bash%20terminal.png">
  
+ <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/gifs/terminal.gif">
  
- #### [(Click Here)](https://youtu.be/ew_ggQDBpjc) to see the workflow video
+
 
  For changing the design :<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/terminal/bash/.bashrc#:~:text=if%20%5B%20%22,unset%20color_prompt%20force_color_prompt">check</a>
  
@@ -84,8 +90,8 @@ Browser : Qute Browser
 * My personal favourite browser now :kissing_heart: 
  I try to create a minimal and clean <a href="https://github.com/vishnudas-bluefox/dotfiles/tree/master/qutebrowser/startpage" >start page </a> for the browser. I tried my best to maintain the connection between the color themes and brand logo. The default vim keybindings was the most efficient part for the qute-browser.I love vim keybindings coustom key bindings isn't needed for this browser but i added few key bindings for increasing the quteness <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/qutebrowser/config.py#:~:text=config.bind(%27M%27%2C%20%27hint,never%3B%3B%20config%2Dcycle%20tabs.show%20always%20never%27)">[ Key-bindings]</a>.
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/clean_browser.png">
- 
- #### [(Click Here)](https://youtu.be/eIjtknr91-w) to see the workflow video
+ <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/gifs/Browser.gif">
+
   
  ### Splash Screen 
  ______________
@@ -102,8 +108,9 @@ __________________________
 Currently using a boalted emacs [Spoiler : noob dev] , Here also i try my best to maintain the color theme and connection with wallpaper. Vim key binding was also available here [Evil-mode :smiling_imp: ]. The productivity was on another level with the doom emacs
 <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/doom_emacs.png%20">
 <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/doom_emacconfig.png">
- #### [(Click Here)](https://youtu.be/syNwmf_8c4k) to see the workflow video
+<img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/gifs/doom.gif">
+
 ##### Some cool patches
 * Email Client [m4ue]
-* Music player [emms]
+* Music player [emms] workflow video: <a href="https://youtu.be/yKGnk7SNmKg">Click Here</a>
 * neotree etc...
