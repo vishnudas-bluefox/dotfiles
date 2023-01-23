@@ -450,10 +450,10 @@ globalkeys = mytable.join(
     --     awful.util.spawn("xbacklight -dec 15") end),
     -- awful.key({ }, "XF86MonBrightnessUp", function ()
     --     awful.util.spawn("xbacklight -inc 15") end)
-    awful.key({ altkey }, "XF86MonBrightnessUp", function () 
+    awful.key({ altkey }, "XF86MonBrightnessUp", function ()
         awful.util.spawn("xrandr --output eDP-1 --brightness 1") end,
               {description = "+10%", group = "hotkeys"}),
-    awful.key({ altkey }, "XF86MonBrightnessDown", function () 
+    awful.key({ altkey }, "XF86MonBrightnessDown", function ()
         awful.util.spawn("xrandr --output eDP-1 --brightness .5") end,
               {description = "-10%", group = "hotkeys"}),
 
@@ -550,7 +550,7 @@ globalkeys = mytable.join(
             beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
         end,
         {description = "show dmenu", group = "launcher"}),
-    
+
     -- alternatively use rofi, a dmenu-like application with more features
     -- check https://github.com/DaveDavenport/rofi for more details
     --[[ rofi
@@ -574,7 +574,7 @@ globalkeys = mytable.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"})
-    
+
 )
 
 clientkeys = mytable.join(
@@ -824,8 +824,8 @@ client.connect_signal("request::titlebars", function(c)
 end)
 -- Autorun programs in Awesome WM
 autorun = true
-autorunApps = 
-{ 
+autorunApps =
+{
 --    "gnome-terminal",
 --    "x-terminal-emulator",
       "/usr/bin/emacs --daemon", -- start emacs in daemon mode
