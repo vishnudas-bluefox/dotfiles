@@ -27,7 +27,8 @@ _____________________
 ### HomeSCreen 
 _______________
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/Homescreen.png" >
- AwesomeWM manager used here to coustomize the home screen.The title bar was configured with Wibox [<a href="https://awesomewm.org/doc/api/index.html">Documentation</a>] We use 8 active workspaces for satisfying the minimal needs :innocent:, we are able to increase the workspaces if needed [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/rc.lua#:~:text=awful.util.tagnames%20%3D%20%7B%20%22main%22%2C%20%22http%22%2C%20%22dev%22%2C%20%22dev2%22%2C%20%22misc%22%2C%22garbage%22%2C%20%227%22%2C%228%22%20%7D">rc.lua</a>]. The wibar was color themed for the wallpaper, the user can adjust the colors if needed [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=theme.fg_normal%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D,titlebar_fg_focus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D%20theme.fg_focus">theme.lua</a>], Fonts and wallpaper are also customizable [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=theme.wallpaper,Terminus%209%22s">theme.lua</a>]. The wibar was completely customizable for all kind of users users can add or remove functions if needed
+ 
+ The AwesomeWM window manager was employed to effect customizations on the home screen. The title bar was configured utilizing the Wibox utility, in accordance with the established [<a href="https://awesomewm.org/doc/api/index.html">Documentation</a>]. For the purposes of satiating minimum requirements, eight active workspaces were utilized, with the option of expansion available to meet any exigencies, as per the stipulations of the [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/rc.lua#:~:text=awful.util.tagnames%20%3D%20%7B%20%22main%22%2C%20%22http%22%2C%20%22dev%22%2C%20%22dev2%22%2C%20%22misc%22%2C%22garbage%22%2C%20%227%22%2C%228%22%20%7D">rc.lua</a>] file. The wibar was custom-fitted with a color theme that mirrored the wallpaper, and afforded flexibility for users to adjust the color schema as necessitated in the  [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=theme.fg_normal%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D,titlebar_fg_focus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3D%20theme.fg_focus">theme.lua</a>] file. Both fonts and wallpaper graphics were rendered open to modification within the same [<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/awesome/themes/powerarrow-dark/theme.lua#:~:text=theme.wallpaper,Terminus%209%22s">theme.lua</a>] file. Users were provided the capability of all-encompassing customization of the wibar, with the added benefit of permitting the installation and removal of any desired functions. We invite you to create and configure your own config files using these parameters.
 
 
 
@@ -61,13 +62,12 @@ Mod + S for see the keybindings
 ### Terminal [Bash/Kitty ] 
 _______________________
 <img src="https://img.icons8.com/office/40/7950F2/console.png"/>
-Both terminals Kitty, and Bash are customly configured for the color theme and wallpaper . Bash/fish is supported by both terminals
 
+* Both Kitty and Bash terminals have been customized to reflect a unified color scheme and wallpaper.
+* Both terminals support Bash and Fish shells.
+* The following terminal commands are specific to Bash users.
 
-* The followig terminal commands are only applicable for the bash terminal users 
-
-Coustom terminal commands for bash user for simplifying the frequent used terminal commands:
-
+Custom Bash terminal commands have been configured to simplify frequently-used commands:
 Commands | undak | kala | chambikko | foxenv | foxreq | title |
 --- | --- | --- | --- |--- |--- |--- |
 Orginal commands | mkdir+cd or create file | delete directory or files | For update and upgrade | Create python virtualenv | install dependencies | Set coustom title for terminal |
@@ -87,8 +87,8 @@ Orginal commands | mkdir+cd or create file | delete directory or files | For upd
 ### Browser 
 ________________
 Browser : Qute Browser
-* My personal favourite browser now :kissing_heart: 
- I try to create a minimal and clean <a href="https://github.com/vishnudas-bluefox/dotfiles/tree/master/qutebrowser/startpage" >start page </a> for the browser. I tried my best to maintain the connection between the color themes and brand logo. The default vim keybindings was the most efficient part for the qute-browser.I love vim keybindings coustom key bindings isn't needed for this browser but i added few key bindings for increasing the quteness <a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/qutebrowser/config.py#:~:text=config.bind(%27M%27%2C%20%27hint,never%3B%3B%20config%2Dcycle%20tabs.show%20always%20never%27)">[ Key-bindings]</a>.
+My preferred web browser is QuteBrowser :kissing_heart:, and I have attempted to establish a minimalistic and uncluttered arrangement. A concerted effort has been made to ensure that the color themes and brand logos are coherent and interconnected. In keeping with the QuteBrowser's default vim keybindings, this feature has been a prime advantage. I personally favor vim keybindings, and therefore have not felt the need to create customized keybindings for this browser. However, in a bid to enhance the overall aesthetics and elevate the 'quteness', a few supplementary keybindings have been included, as detailed in the<a href="https://github.com/vishnudas-bluefox/dotfiles/blob/master/qutebrowser/config.py#:~:text=config.bind(%27M%27%2C%20%27hint,never%3B%3B%20config%2Dcycle%20tabs.show%20always%20never%27)">[ Key-bindings]</a>. section.
+
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/clean_browser.png">
  <img src="https://github.com/vishnudas-bluefox/dotfiles/blob/master/screenshots/gifs/Browser.gif">
 
