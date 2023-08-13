@@ -114,3 +114,7 @@ Currently using a boalted emacs [Spoiler : noob dev] , Here also i try my best t
 * Email Client [m4ue]
 * Music player [emms] workflow video: <a href="https://youtu.be/yKGnk7SNmKg">Click Here</a>
 * neotree etc...
+
+##### Touch clicking on
+* by default the awesome touchpad provide button click action for touchpad devices we need to manually enable touch click functionality
+
