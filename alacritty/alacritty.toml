@@ -1,0 +1,26 @@
+[window]
+padding = { x = 24, y = 24 }
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[cursor]
+style = {shape = "Beam" ,blinking = "On"}
+
+[font]
+normal = {family = "monospace", style = "Regular"}
+size = 10.0
+
+[colors]
+primary = { background = "#021116", foreground = "#68B3B4" }
+normal = { black = "#0F111A", red = "#FF5370", green = "#2BA07D", yellow = "#C4E88D", blue = "#82AAFF", magenta = "#C792EA", cyan = "#89DDFF", white = "#464B5D" }
+bright = { black = "#0F111A", red = "#FF5370", green = "#99C794", yellow = "#C4E88D", blue = "#82AAFF", magenta = "#C792EA", cyan = "#89DDFF", white = "#8F93A2" }
+
+[bell]
+animation = "Linear"
+duration = 10
+color = "#AAFFCC"
+
+[mouse]
+hide_when_typing = true
